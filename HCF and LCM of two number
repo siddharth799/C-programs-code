@@ -1,0 +1,31 @@
+// WAP TO PRINT HCF of two number
+#include<stdio.h>
+int main(){
+    int prod,i,a,b,min;
+    printf("enter two number ");
+    scanf("%d%d",&a,&b);
+    min=a<b?a:b;
+    for(i=1;i<=min;i++){
+        if(a%i==0&&b%i==0){
+            prod=i;
+        }
+    }
+        printf("HCF of %d and %d are : %d",a,b,prod);
+}
+---------------------------------------------------------------------------------------------------------------
+// WAP TO PRINT LCM of two number
+#include<stdio.h>
+int main(){
+    int HCF,i,a,b,min,lcm;
+    printf("enter two number ");
+    scanf("%d%d",&a,&b);
+    min=a<b?a:b;
+    for(i=1;i<=min;i++){
+        if(a%i==0&&b%i==0){
+            HCF=i;
+        }
+    }
+        lcm=(a*b)/HCF;
+        printf("lcm of %d and %d are : %d",a,b,lcm);
+}
+
