@@ -1,0 +1,11 @@
+// WAP to count total no. of digit without usings and for loop!
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n,x;
+    printf("enter no.");
+    scanf("%d",&n);
+    x=log(n)/log(10);
+    printf("total digit is: %d",x+1);
+    
+}
