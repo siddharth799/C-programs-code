@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main(){
+    int row ,space ,star,n,x;
+    x=1;
+    printf("enter number");
+    scanf("%d",&n);
+    for(row=1;row<=n;row++){
+        for(space=1;space<=n-row;space++){
+            printf(" ");
+        }
+        for(star=1;star<=x;star++){
+            printf("*");
+        }
+        printf("\n");
+        x=x+2;
+    }
+    for(row=1;row<=n-1;row++){
+        for(space=1;space<=row;space++){
+            printf(" ");
+        }
+        for(star=1;star<=x-4;star++){
+            printf("*");
+        }
+        x=x-2;
+        printf("\n");
+    }
+}
+OUTPUT:-
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
