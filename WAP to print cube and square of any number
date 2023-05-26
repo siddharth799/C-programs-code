@@ -1,0 +1,26 @@
+//WAP TO PRINT CUBE AND SQUARE OF A NUMBER from 1 to n
+#include<stdio.h>
+int main(){
+int i,x,y,n=1;
+printf("enter how many time you want to print cube  ie 1  to n times");
+scanf("%d",&x);
+for(i=1;i<=x;i++){
+    n=i*i*i;
+
+    printf("cube of %d : %d \n",i,n);
+}
+}
+// ----------------------------------------------------------------------------------------
+//WAP TO SQUARE OF A NUMBER from 1 to n
+#include<stdio.h>
+int main(){
+int i,x,y,n=1;
+printf("enter how many time you want to print square  ie 1  to n times");
+scanf("%d",&x);
+for(i=1;i<=x;i++){
+    n=i*i*;
+
+    printf("square of %d : %d \n",i,n);
+}
+}
+// ----------------------------------------------------------------------------------------
