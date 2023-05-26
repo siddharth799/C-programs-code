@@ -1,1 +1,82 @@
+easy code;-->
 
+#include<stdio.h>
+int main(){
+    int col,row,star,space,x,n;
+    printf("enter limit");
+    scanf("%d",&n);
+    for(row=1;row<=n;row++){
+        for(col=1;col<=n;col++){
+            if(row==1||row==n||col==1||col==n)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------
+ANOTHER WAY TO SOLVE THIS PROBLEM
+
+#include<stdio.h>
+int main(){
+    int row,star,space,x,n;
+    printf("enter limit");
+    scanf("%d",&n);
+    for(row=1;row<=n;row++){
+        if(row==1||row==n){
+            for(star=1;star<=n;star++){
+                printf("*");
+                printf(" ");
+            }
+            printf("\n");
+        }
+        else{
+            for(row=1;row<=n-2;row++){
+            printf("*");
+            for(space=1;space<=n+2;space++){
+                printf(" ");
+            }
+            printf("*");
+            printf("\n");
+            }
+        }
+    }
+}
+OUTPUT;-
+* * * * * 
+*       *
+*       *
+*       *
+* * * * *
+--------------------------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+int main(){
+    int row,star,space,x,n;
+    printf("enter limit");
+    scanf("%d",&n);
+    for(row=1;row<=n;row++){
+        if(row==1||row==n){
+            for(star=1;star<=n;star++){
+                printf("*");
+            }
+            printf("\n");
+        }
+        else{
+            for(row=1;row<=n-2;row++){
+            printf("*");
+            for(space=1;space<=n-2;space++){
+                printf(" ");
+            }
+            printf("*");
+            printf("\n");
+            }
+        }
+    }
+}
+OUTPUT;-
+*****
+*   *
+*   *
+*   *
+*****
