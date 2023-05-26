@@ -1,0 +1,32 @@
+//WAP TO CHECK WHETHER GIVEN NO. ARE PRIME OR NOT
+#include<stdio.h>
+int main(){
+    int i,n,count=0;
+    printf("enter no");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        if(n%i==0){
+            count++;
+        }
+    }
+    if(count==2)
+        printf("%d is prime no",n);
+    else
+        printf("not prime");
+}
+//*------------------------------------------------------------------------------*
+//WAP TO PRINT PRIME NUMBER BETWEEN 1 TO N
+#include<stdio.h>
+int main(){
+    int i,j,n;
+    printf("enter no");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=2;j<i;j++){
+            if(i%j==0)
+                break;
+        }
+        if(i==j)
+            printf("%d ",i);
+    }
+}
