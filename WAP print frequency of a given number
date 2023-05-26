@@ -1,0 +1,18 @@
+// WAP a program to find the frequemcy of a given number
+#include<stdio.h>
+int main(){
+    int n,temp,m,count=0;
+    printf("enter no.");
+    scanf("%d",&n);
+    printf("frequency number");
+    scanf("%d",&m);
+    while(n>0){
+    temp=n%10;
+    n=n/10;
+    if(temp==m){
+        count++;
+    }
+    }
+    printf("frequency of %d is %d:",m,count);
+    
+}
