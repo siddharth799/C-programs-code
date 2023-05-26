@@ -1,0 +1,66 @@
+#include<stdio.h>
+int main()
+    {
+        int n;
+        printf("enter number ");
+        scanf("%d",&n);
+        if(stronghai(n))
+            printf("%d is strong",n);
+        else
+            printf("%d is not strong ",n);
+    }
+int stronghai(int n){
+    int digit,a,sum;
+    a=n;
+    while(n>0){
+        digit=n%10;
+        sum=sum+factorial(digit);
+        n=n/10;
+    }
+    if(sum==a)
+        return 10;
+    else
+        return 0;
+}
+int factorial(digit){
+    int i,prod=1;
+    for(i=1;i<=digit;i++){
+        prod=prod*i;
+    }
+    return prod;
+}
+-----------------------------------------------------------------------------------------------------------------------------
+1 to n strong number program with the help of function
+#include<stdio.h>
+int main()
+    {
+        int n,k;
+        printf("enter number ");
+        scanf("%d",&n);
+        for(k=1;k<=n;k++){
+            if(stronghai(k)){
+                printf("%d is strong",k);
+                printf("\n");}
+        }
+    }
+int stronghai(int k){
+    int digit,a,sum=0;
+    a=k;
+    while(k>0){
+        digit=k%10;
+        sum=sum+factorial(digit);
+        k=k/10;
+    }
+    if(sum==a)
+        return 10;
+    else
+        return 0;
+}
+int factorial(digit){
+    int i,prod=1;
+    for(i=1;i<=digit;i++){
+        prod=prod*i;
+    }
+    return prod;
+}
+
